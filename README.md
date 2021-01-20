@@ -1,19 +1,11 @@
 # node-red-contrib-mb-embed
-# Node-RED UI LED
 
-A simple LED status indicator for the Node-RED Dashboard
+A simple node to embed Metabase Dashboards and Queries for the Node-RED Dashboard
 
-![CI](https://github.com/Adorkable/node-red-contrib-ui-led/workflows/CI/badge.svg)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led?ref=badge_shield)
-
-[![dependencies](https://img.shields.io/david/adorkable/node-red-contrib-ui-led.svg?style=flat-square)](https://github.com/Adorkable/node-red-contrib-ui-led/network/dependencies)
-[![peer-dependencies](https://img.shields.io/david/peer/adorkable/node-red-contrib-ui-led.svg?style=flat-square)](https://github.com/Adorkable/node-red-contrib-ui-led/network/dependencies)
-[![dev-dependencies](https://img.shields.io/david/dev/adorkable/node-red-contrib-ui-led.svg?style=flat-square)](https://github.com/Adorkable/node-red-contrib-ui-led/network/dependencies)
-[![optional-dependencies](https://img.shields.io/david/optional/adorkable/node-red-contrib-ui-led.svg?style=flat-square)](https://github.com/Adorkable/node-red-contrib-ui-led/network/dependencies)
 
 ![Examples Image](images/examples.png)
 
-The node uses `msg.payload`'s value to determine status. By default:
+The node uses on the input `msg.token`'s value to determine status. By default:
 
 - `msg.payload` === `true` - **Green**
 - `msg.payload` === `false` - **Red**
@@ -45,29 +37,5 @@ Similarly existing Value => Color maps can be modified.
 
 Finally to delete a mapping simply press the X button on the far right!
 
-## Custom Statuses in `msg`
 
-By enabling _Allow Color For Value map in msg_ in a node that node will use dictionaries passed via `msg.colorForValue` to override any previous color to value mappings.
-
-The format should be `value` => `color`, ie an object whose key values return color values.
-
-Example:
-
-```js
-msg.colorForValue = {}
-msg.colorForValue[true] = 'purple'
-msg.colorForValue[false] = 'orange'
-```
-
-## Further Examples
-
-To see usages already set up check out the examples included with the project by using _Import_ in your Node-RED editor!
-
-## License
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led?ref=badge_large)
-
-## Thanks to
-
-- [@alexk111](https://github.com/alexk111) for his great [Node-RED Typescript Starter](https://github.com/alexk111/node-red-node-typescript-starter) which made it a breeze to convert the project over to Typescript
 
