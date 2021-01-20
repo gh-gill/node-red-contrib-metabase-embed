@@ -15,6 +15,10 @@ The node uses on the input `msg.token`'s value to determine status. By default:
 - `Title `  === `Show title` - Default **false**
 - `Border ` === `Show border` - Default **false**
 
+## Setup Metrabase for embedded applications
+- See online documention from metabase
+https://www.metabase.com/docs/latest/administration-guide/13-embedding.html#embedding-metabase-in-other-applications
+
 ## Install
 
 To install the node run the following from your Node-RED user directory (`~/.node-red`):
