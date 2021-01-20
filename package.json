@@ -11,7 +11,7 @@
 
   "node-red" : {
         "nodes": {
-           "Metabase-Embed": "mb.js"
+           "mb": "mb.js"
         }
     },
     "dependencies": {
