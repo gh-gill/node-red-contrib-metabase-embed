@@ -20,7 +20,7 @@ module.exports = function(RED) {
 	    };
             var token = jwt.sign(payload, METABASE_SECRET_KEY);
 
-            msg.payload = METABASE_SITE_URL + "/embed/dashboard/" + token + "#" +theme +"bordered=" + border +"&titled=" + title;
+            msg.iframeUrl = METABASE_SITE_URL + "/embed/dashboard/" + token + "#" +theme +"bordered=" + border +"&titled=" + title;
             
             node.send(msg);
         });
