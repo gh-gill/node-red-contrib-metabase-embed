@@ -25,5 +25,5 @@ module.exports = function(RED) {
             node.send(msg);
         });
     }
-    RED.nodes.registerType("Metabase-Embed",mb);
+    RED.nodes.registerType("mb",mb);
 }
