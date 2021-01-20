@@ -3,13 +3,18 @@
         category: 'function',
         color: '#a6bbcf',
         defaults: {
-            name: {value:""}
+            name: {value:""},
+            url : {value:""},
+            token : {value:""},
+            theme : {value:""},
+            title : {value:""},
+            frame : {value:""} 
         },
         inputs:1,
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.name||"somebody";
+            return this.name||"Metabase";
         }
     });
 </script>
@@ -19,6 +24,31 @@
         <label for="node-input-name"><i class="fa fa-user"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
+    <div class="form-row">
+        <label for="node-input-url"><i class="fa fa-external-link"></i> URL</label>
+        <input type="text" id="node-input-url" placeholder="http://localhost:3000">
+    </div>
+    <div class="form-row">
+        <label for="node-input-token"><i class="fa fa-key"></i> Token</label>
+        <input type="text" id="node-input-token" placeholder="xxxxxxxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="form-row">
+        <label for="node-input-theme"><i class="fa fa-window-restore"></i> Theme</label>
+            <select id="light mode">
+            <option value="light mode"></option>
+            <option value="dark mode">theme=night&</option>
+        </select>
+    </div>
+    <div class="form-row">
+		<label>&nbsp;</label>
+		<input type="checkbox" id="node-input-title" style="display: inline-block; width: auto; vertical-align: top;">
+		<label for="node-input-title" style="width:70%;"><span data-i18n="show title"></span></label>
+	</div>
+    <div class="form-row">
+		<label>&nbsp;</label>
+		<input type="checkbox" id="node-input-frame" style="display: inline-block; width: auto; vertical-align: top;">
+		<label for="node-input-frame" style="width:70%;"><span data-i18n="show frame"></span></label>
+	</div>
 </script>
 
 <script type="text/html" data-help-name="lower-case">
