@@ -16,10 +16,10 @@ The node uses on the input `msg.token`'s value to determine status. By default:
 To install the node run the following from your Node-RED user directory (`~/.node-red`):
 
 ```bash
-npm install node-red-contrib-ui-led
+npm install node-red-contrib-mb-embed
 ```
 
-Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-ui-led`).
+Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-mb-embed`).
 
 ## Custom Statuses
 
@@ -29,9 +29,7 @@ To customize the mappings open the node's configuration panel and scroll to the 
 
 ![Colors for Values Image](images/colorsForValues.png)
 
-To add a value mapping press the **+Color** button at the bottom of the list.
 
-Next fill in a color in a [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) format (color name, hex, rgb, rgba...), select the value type (`string`, `boolean`...) and fill in an appropriate value.
 
 Similarly existing Value => Color maps can be modified.
 
