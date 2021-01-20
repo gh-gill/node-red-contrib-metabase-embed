@@ -1,6 +1,6 @@
 
 module.exports = function(RED) {
-    function MetabaseEmbed(config) {
+    function mb(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         node.on('input', function(msg) {
@@ -25,5 +25,5 @@ module.exports = function(RED) {
             node.send(msg);
         });
     }
-    RED.nodes.registerType("Metabase-Embed",MetabaseEmbed);
+    RED.nodes.registerType("mb",mb);
 }
