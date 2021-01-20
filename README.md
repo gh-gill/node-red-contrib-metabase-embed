@@ -5,8 +5,6 @@ A simple node to embed Metabase Dashboards and Queries for the Node-RED Dashboar
 
 ![Examples Image](pictures/config_mb.png)
 
-The node uses on the input `msg.token`'s value to determine status. By default:
-
 - `Name`    === `Node Name` - Default **Metabase**
 - `URL`     === `Web address of Metabase` - Default **http://localhost:3000**
 - `Token`   === `Token created by Metabase` - Default **xxxx**
