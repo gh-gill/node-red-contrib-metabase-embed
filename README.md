@@ -7,9 +7,13 @@ A simple node to embed Metabase Dashboards and Queries for the Node-RED Dashboar
 
 The node uses on the input `msg.token`'s value to determine status. By default:
 
-- `msg.payload` === `true` - **Green**
-- `msg.payload` === `false` - **Red**
-- no `msg` received yet or `msg.payload` !== `true` and `msg.payload` !== `false` - **Gray**
+- `Name`    === `Node Name` - Default **Metabase**
+- `URL`     === `Web address of Metabase` - Default **http://localhost:3000**
+- `Token`   === `Token created by Metabase` - Default **xxxx**
+- `Expire`  === `Minuites before link expires` - Default **100**
+- `Theme`   === `Theme mode` - Default **Light mode**
+- `Title `  === `Show title` - Default **false**
+- `Border ` === `Show border` - Default **false**
 
 ## Install
 
