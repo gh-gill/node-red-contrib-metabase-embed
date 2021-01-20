@@ -17,7 +17,7 @@ The node uses on the input `msg.token`'s value to determine status. By default:
 
 ## Setup Metrabase for embedded applications
 - See online documention from metabase
-https://www.metabase.com/docs/latest/administration-guide/13-embedding.html#embedding-metabase-in-other-applications
+- https://www.metabase.com/docs/latest/administration-guide/13-embedding.html#embedding-metabase-in-other-applications
 
 ## Install
 
