@@ -8,10 +8,10 @@ module.exports = function(RED) {
             var jwt = require("jsonwebtoken");
             var METABASE_SITE_URL = config.url;
             var METABASE_SECRET_KEY = config.token;
-	    var expire = config.expire;
-	    var theme = config.theme;
-	    var title = config.title;
-	    var border = config.border;	
+	    var expire = config.expire||100;
+	    var theme = config.theme||"";
+	    var title = config.title||false;
+	    var border = config.border||false;	
 
             var payload = {
 		  resource: { dashboard: 1 },
@@ -20,7 +20,7 @@ module.exports = function(RED) {
 	    };
             var token = jwt.sign(payload, METABASE_SECRET_KEY);
 
-            msg.payload = METABASE_SITE_URL + "/embed/dashboard/" + token + "#" +theme +"&bordered=" + border +"&titled=" + title;
+            msg.payload = METABASE_SITE_URL + "/embed/dashboard/" + token + "#" +theme +"bordered=" + border +"&titled=" + title;
             
             node.send(msg);
         });
