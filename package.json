@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-mb-embed",
-  "version": "1.0.0",
-  "description": "Embed Metabase",
+  "name": "node-red-contrib-metabase-embed",
+  "version": "1.0.1",
+  "description": "Embed Metabase dashboards into Node-Red UI",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
 
   "node-red" : {
         "nodes": {
-           "mb": "mb.js"
+           "metabase-embed": "mb.js"
         }
     },
     "dependencies": {
