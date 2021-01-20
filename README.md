@@ -3,7 +3,7 @@
 A simple node to embed Metabase Dashboards and Queries for the Node-RED Dashboard
 
 
-![Examples Image](images/examples.png)
+![Examples Image](pictures/config_mb.png)
 
 The node uses on the input `msg.token`'s value to determine status. By default:
 
