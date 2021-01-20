@@ -3,12 +3,13 @@
         category: 'function',
         color: '#a6bbcf',
         defaults: {
-            name: {value:""},
-            url : {value:""},
-            token : {value:""},
-            theme : {value:""},
-            title : {value:""},
-            frame : {value:""} 
+            name   : {value:""},
+            url    : {value:""},
+            token  : {value:""},
+	    expire : {value:""},
+            theme  : {value:""},
+            title  : {value:""},
+            frame  : {value:""} 
         },
         inputs:1,
         outputs:1,
@@ -31,6 +32,10 @@
     <div class="form-row">
         <label for="node-input-token"><i class="fa fa-key"></i> Token</label>
         <input type="text" id="node-input-token" placeholder="xxxxxxxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="form-row">
+        <label for="node-input-expire"><i class="fa fa-key"></i> Expire</label>
+        <input type="number" id="node-input-expire" placeholder="100">
     </div>
     <div class="form-row">
         <label for="node-input-theme"><i class="fa fa-window-restore"></i> Theme</label>
