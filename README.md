@@ -1,7 +1,18 @@
-# node-red-contrib-mb-embed
+# node-red-contrib-metabase-embed
 
 A simple node to embed Metabase Dashboards and Queries for the Node-RED Dashboard
 
+These nodes uses roslibjs
+
+## install
+
+`npm install node-red-contrib-metabase-embed`
+
+or
+
+`node-red-admin install node-red-contrib-metabase-embed`
+
+## configuration
 
 ![Examples Image](pictures/config_mb.png)
 
