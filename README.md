@@ -14,7 +14,7 @@ npm install node-red-contrib-metabase-embed
 
 or
 
-Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-metabaseb-embed`).
+Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-metabase-embed`).
 
 ## configuration
 
