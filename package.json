@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/namgk/node-red-contrib-ros.git"
+    "url": "git+ssh://git@github.com/gh-gill/node-red-contrib-metabase-embed.git"
   },
   "author": "GBh",
   "license": "MIT",
