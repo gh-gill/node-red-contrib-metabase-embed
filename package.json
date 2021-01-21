@@ -3,12 +3,18 @@
   "version": "1.0.1",
   "description": "Embed Metabase dashboards into Node-Red UI",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/namgk/node-red-contrib-ros.git"
   },
   "author": "GBh",
   "license": "MIT",
-
+  "keywords": [
+    "node-red",
+    "metabase",
+    "jsonwebtoken",
+    "ui"
+  ],
   "node-red" : {
         "nodes": {
            "mb": "mb.js"
